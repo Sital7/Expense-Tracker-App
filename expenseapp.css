@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('assets/exp3.png'); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.app-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select, input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+}
+
+button.edit,
+button.delete {
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 120px;  
+    margin-left: 10px;
+}
+
+button.delete:hover,
+button.edit:hover {
+    opacity: 0.8;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+button.delete {
+    background-color: red;
+}
+
+button.edit {
+    background-color: orange;
+}
+
+button.delete:hover, button.edit:hover {
+    opacity: 0.8;
+}
+
+
+button#toggle-expenses,
+button#toggle-total {
+    background-color: #45a049;
+    margin-top: 10px;
+}
+
+button#toggle-expenses:hover,
+button#toggle-total:hover {
+    background-color: #45a049;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%; 
+}
