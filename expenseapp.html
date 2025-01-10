@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expenseapp.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Expense Tracker</h1>
+        
+        <div class="form-container">
+            <!-- Dropdown for expense type selection -->
+            <select id="expense-type">
+                <option value="" disabled selected>Select Expense Type</option>
+                <option value="Food">Food</option>
+                <option value="Goods & Services">Goods & Services</option>
+                <option value="Transport">Transport</option>
+                <option value="Entertainment">Entertainment</option>
+            </select>
+
+            <input type="number" id="expense-amount" placeholder="Amount" />
+
+            <input type="text" id="expense-detail" placeholder="Expense Detail" />
+
+            <button id="record-expense">Record Expense</button>
+        </div>
+
+        <button id="toggle-expenses">Show Expenses</button>
+        <button id="toggle-total">Show Total</button>
+
+        <ul id="expense-list" style="display: none;"></ul>
+
+        <h3 id="total-expense" style="display: none;">Total: Rs 0.00</h3>
+    </div>
+
+    <script src="expenseapp.js"></script>
+</body>
+</html>
